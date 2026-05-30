@@ -207,7 +207,7 @@ export default function Founder() {
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 15, lineHeight: 1.85, fontWeight: 300 }}>
               <span style={{ fontWeight: 700, color: "#fff" }}>
-                Dr.P.D.Rohithan is the Founder of Buildora</span>, a platform focused on solving business challenges through data, AI, and structured execution. What began as a passion for engineering evolved into a journey of helping businesses transform complexity into clear, scalable solutions.
+                Mr.P.D.Rohithan is the Founder of Buildora</span>, a platform focused on solving business challenges through data, AI, and structured execution. What began as a passion for engineering evolved into a journey of helping businesses transform complexity into clear, scalable solutions.
               </p>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 15, lineHeight: 1.85, fontWeight: 300 }}>
                 Through freelancing and project-based collaborations, he has worked across analytics, automation, product strategy, and business intelligence — combining engineering thinking with data-driven decision making to deliver measurable impact.
