@@ -94,7 +94,7 @@ export default function Contact() {
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               {[
-                { icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/buildora-7771ab410/", label: "LinkedIn" },
+                { icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/rohithan-p-d-98a905255/", label: "LinkedIn" },
                 { icon: <TwitterIcon />, href: "https://twitter.com/buildora", label: "X" },
                 { icon: <InstagramIcon />, href: "https://www.instagram.com/buildora_agencz?igsh=anExMGpqNGNuZDB1", label: "Instagram" },
               ].map(s => (
