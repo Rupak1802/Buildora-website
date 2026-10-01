@@ -68,6 +68,13 @@ export default function About() {
                 "To become a globally trusted technology powerhouse driving the next generation of digital transformation through innovation, intelligence, and scalable solutions."
               </p>
             </div>
+            <div style={{ borderTop: "1px solid rgba(255,255,255,0.12)", paddingTop: 24, marginTop: 8 }}>
+              <p style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: "#ffffff", marginBottom: 10 }}>Contact</p>
+              <p style={{ color: "#ffffff", fontSize: 14, lineHeight: 1.75 }}>
+                Email: rohithanfreelance@gmail.com<br />
+                Phone: +91 6299 580 783
+              </p>
+            </div>
           </motion.div>
         </div>
 

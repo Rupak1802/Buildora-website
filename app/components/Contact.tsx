@@ -83,7 +83,7 @@ export default function Contact() {
               Tell us about your project and we'll get back to you within 24 hours.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {[{ icon: <Mail size={15} />, text: "hello@buildora.co" }, { icon: <Phone size={15} />, text: "+91 98XXX XXXXX" }].map(item => (
+              {[{ icon: <Mail size={15} />, text: "rohithanfreelance@gmail.com" }, { icon: <Phone size={15} />, text: "+91 6299 580 783" }].map(item => (
                 <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 16 }}>
                   <div style={{ width: 36, height: 36, border: "1px solid rgba(255,255,255,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#89E900", flexShrink: 0, background: "rgba(137,233,0,0.08)" }}>
                     {item.icon}
