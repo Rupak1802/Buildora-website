@@ -22,18 +22,23 @@ const InstagramIcon = () => (
 );
 
 const navLinks = [
-  { label: "About",        href: "#about" },
-  { label: "Founder",      href: "#founder" },
-  { label: "Services",     href: "#services" },
-  { label: "Portfolio",    href: "#portfolio" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact",      href: "#contact" },
+  { label: "About",        href: "/#about" },
+  { label: "Founder",      href: "/#founder" },
+  { label: "Experience",   href: "/#experience" },
+  { label: "Services",     href: "/#services" },
+  { label: "Portfolio",    href: "/#portfolio" },
+  { label: "Video Studio", href: "/video-editing" },
+  { label: "Clients",      href: "/#testimonials" },
+  { label: "Contact",      href: "/#contact" },
 ];
 
 const serviceLinks = [
-  "Product Management", "Full Stack Development",
-  "AI & Automation", "Cybersecurity",
-  "Business Consulting", "Web Development",
+  { label: "Video Editing Studio", href: "/video-editing" },
+  { label: "Full Stack Development", href: "/#services" },
+  { label: "AI & Automation", href: "/#services" },
+  { label: "Web Development", href: "/#services" },
+  { label: "Cybersecurity Systems", href: "/#services" },
+  { label: "Product Management", href: "/#services" },
 ];
 
 const socials = [
@@ -84,11 +89,11 @@ export default function Footer() {
           <div>
             <span style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: "#ffffff", marginBottom: 20, display: "block" }}>Services</span>
             {serviceLinks.map(s => (
-              <a key={s} href="#services"
+              <a key={s.label} href={s.href}
                 style={{ fontSize: 14, color: "#ffffff", textDecoration: "none", display: "block", marginBottom: 12, transition: "color 0.2s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "#ffffff")}
                 onMouseLeave={e => (e.currentTarget.style.color = "#ffffff")}>
-                {s}
+                {s.label}
               </a>
             ))}
           </div>

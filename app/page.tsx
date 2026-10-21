@@ -5,8 +5,10 @@ import Navbar from "./components/Navbar";
 import HeroScroll from "./components/HeroScroll";
 import About from "./components/About";
 import Founder from "./components/Founder";
+import Experience from "./components/Experience";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
+import VideoShowcase from "./components/VideoShowcase";
 import Values from "./components/Values";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -26,8 +28,10 @@ export default function Home() {
         <HeroScroll />
         <About />
         <Founder />
+        <Experience />
         <Services />
         <Portfolio />
+        <VideoShowcase />
         <Values />
         <Testimonials />
         <Contact />

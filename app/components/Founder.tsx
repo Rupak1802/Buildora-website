@@ -268,7 +268,7 @@ export default function Founder() {
             {/* Photo — fills full column height */}
             <div style={{ position: "relative", zIndex: 1, border: "1px solid rgba(137,233,0,0.25)", overflow: "hidden", background: "#1a1a1a", width: "100%", aspectRatio: "3/4" }}>
               <Image
-                src="/rohithan.png"
+                src="/founder.jpeg"
                 alt="Rohithan P D — Founder of Buildora"
                 fill
                 style={{ objectFit: "cover", objectPosition: "top center", filter: "contrast(1.05) brightness(0.95)" }}

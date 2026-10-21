@@ -5,12 +5,14 @@ import Link from "next/link";
 import BuildoraLogo from "./Logo";
 
 const links = [
-  { label: "About",       href: "#about" },
-  { label: "Founder",     href: "#founder" },
-  { label: "Services",    href: "#services" },
-  { label: "Portfolio",   href: "#portfolio" },
-  { label: "Testimonials",href: "#testimonials" },
-  { label: "Contact",     href: "#contact" },
+  { label: "About",        href: "/#about" },
+  { label: "Founder",      href: "/#founder" },
+  { label: "Experience",   href: "/#experience" },
+  { label: "Services",     href: "/#services" },
+  { label: "Portfolio",    href: "/#portfolio" },
+  { label: "Video Studio", href: "/video-editing" },
+  { label: "Clients",      href: "/#testimonials" },
+  { label: "Contact",      href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -52,7 +54,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#contact" style={{ padding: "10px 24px", background: "#ffffff", color: "#222222", fontWeight: 700, fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none", transition: "all 0.2s" }}
+          <a href="/#contact" style={{ padding: "10px 24px", background: "#ffffff", color: "#222222", fontWeight: 700, fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none", transition: "all 0.2s" }}
             onMouseEnter={e => { e.currentTarget.style.background = "#89E900"; e.currentTarget.style.color = "#222222"; }}
             onMouseLeave={e => { e.currentTarget.style.background = "#ffffff"; e.currentTarget.style.color = "#222222"; }}>
             Book a Call

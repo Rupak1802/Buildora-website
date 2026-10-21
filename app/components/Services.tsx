@@ -49,14 +49,25 @@ export default function Services() {
                   <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 8, flexWrap: "wrap" }}>
                     <h3 style={{ fontSize: 18, fontWeight: 700, textTransform: "uppercase", color: "#ffffff", letterSpacing: "0.04em" }}>{s.title}</h3>
                     <span style={{ fontSize: 10, fontFamily: "monospace", letterSpacing: "0.18em", textTransform: "uppercase", color: "#89E900", border: "1px solid rgba(137,233,0,0.35)", padding: "2px 8px" }}>{s.cat}</span>
+                    {s.n === "09" && (
+                      <a href="/video-editing" style={{ fontSize: 10, fontFamily: "monospace", letterSpacing: "0.16em", textTransform: "uppercase", color: "#222222", background: "#89E900", padding: "2px 8px", textDecoration: "none", fontWeight: 700, display: "inline-flex", alignItems: "center", gap: 4 }}>
+                        Watch Sample Reels ↗
+                      </a>
+                    )}
                   </div>
                   <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 14, lineHeight: 1.7, fontWeight: 300, marginTop: 8 }}>
                     {s.desc}
                   </p>
                 </div>
-                <div style={{ width: 32, height: 32, border: `1px solid ${hovered === i ? "#89E900" : "rgba(255,255,255,0.25)"}`, display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.3s", flexShrink: 0 }}>
-                  <span style={{ color: hovered === i ? "#89E900" : "rgba(255,255,255,0.5)", fontSize: 14, transition: "color 0.3s" }}>→</span>
-                </div>
+                {s.n === "09" ? (
+                  <a href="/video-editing" style={{ width: 32, height: 32, border: "1px solid #89E900", background: "rgba(137,233,0,0.15)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", flexShrink: 0 }}>
+                    <span style={{ color: "#89E900", fontSize: 14 }}>→</span>
+                  </a>
+                ) : (
+                  <div style={{ width: 32, height: 32, border: `1px solid ${hovered === i ? "#89E900" : "rgba(255,255,255,0.25)"}`, display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.3s", flexShrink: 0 }}>
+                    <span style={{ color: hovered === i ? "#89E900" : "rgba(255,255,255,0.5)", fontSize: 14, transition: "color 0.3s" }}>→</span>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
